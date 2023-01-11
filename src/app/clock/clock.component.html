@@ -1,0 +1,40 @@
+<div ngClass="clock-container">
+  <div>
+    <span (click)="hourClicked()" [hidden]="!hourInputHidden">{{ hour }}</span>
+    <input
+      class="input"
+      type="text"
+      [textContent]="hour"
+      [hidden]="hourInputHidden"
+      [(ngModel)]="hour"
+    />
+    :
+    <span (click)="minuteClicked()" [hidden]="!minuteInputHidden">{{
+      minute
+    }}</span>
+    <input
+      class="input"
+      type="text"
+      [textContent]="minute"
+      [hidden]="minuteInputHidden"
+      [(ngModel)]="minute"
+    />
+    :
+    <span (click)="secondClicked()" [hidden]="!secondInputHidden">{{
+      second
+    }}</span>
+    <input
+      class="input"
+      type="text"
+      [textContent]="second"
+      [hidden]="secondInputHidden"
+      [(ngModel)]="second"
+    />
+    <span> {{ ampm }}</span>
+  </div>
+  <div>
+    <button [hidden]="buttonHidden" (click)="buttonClicked()">
+      Enter value
+    </button>
+  </div>
+</div>

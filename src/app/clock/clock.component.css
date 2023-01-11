@@ -1,0 +1,25 @@
+.clock-container {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.input {
+  width: 20px;
+}
+
+button {
+  margin: 20px;
+  padding: 5px;
+  background-color: rgb(90, 129, 236);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: blue;
+  transition: 0.3s;
+}
